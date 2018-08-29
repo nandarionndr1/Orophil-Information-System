@@ -67,7 +67,7 @@ public class AddPortcaptain extends javax.swing.JFrame {
                 employee.addItem(myRs.getString("LastName")+", "+myRs.getString("FirstName")+"_"+myRs.getInt("EmployeeID"));
             }
             while (rs2.next()) {
-                documentID.addItem(rs2.getString("LastName")+", "+rs2.getString("FirstName")+"_"+rs2.getInt("DocumentID"));
+                documentID.addItem("_"+rs2.getInt("DocumentID"));
             } 
             while (rs3.next()) {
                 crewingOfficer.addItem(rs3.getString("LastName")+", "+rs3.getString("FirstName")+"_"+rs3.getInt("CrewingOfficerID"));
